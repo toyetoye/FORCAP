@@ -1,0 +1,33 @@
+﻿# PROP to FORCAP Parity Matrix
+
+This document maps legacy PROP functions to FORCAP modules and build requirements.
+
+The first parity target is PROP Engineering / PMS because it is the core operational and future Class-facing module.
+
+## Evidence Base
+
+Initial mapping is based on:
+
+- PROP Engineering worksheet history extract
+- PROP Engineering screenshots and help material
+- Existing FORCAP modules
+- Technical Superintendent / former Chief Engineer domain validation
+
+The PROP worksheet history shows completed maintenance records grouped by vessel, component, and criticality category. It includes fields such as vessel, official number, component code, component name, job code, job description, date completed, done-by rank/person, original due date, deferred-until date, job type, and Chief Engineer sign-off.
+
+## PMS / Engineering Mapping
+
+| PROP Area | PROP Function | FORCAP Module | FORCAP Feature | Must Match PROP? | Improvement Opportunity | Priority | Notes |
+|---|---|---|---|---:|---:|---:|---|
+| PROP Engineering | Vessel selection | FORCAP Core | Vessel Selector | Yes | Persistent vessel context across modules | P0 | Every module must operate under selected vessel context |
+| PROP Engineering | Component hierarchy | Engineering / PMS | Engineering Component Explorer | Yes | Search, filters, tree view, history tabs | P0 | Component code is central to PMS traceability |
+| PROP Engineering | Critical Components section | Engineering / PMS | Component Criticality Classification | Yes | Dashboard and reports by criticality | P0 | Must support Critical, Significant, and Standard grouping |
+| PROP Engineering | Completed Worksheets by Component | Engineering / PMS | Completed Worksheet History | Yes | Filters, export, search, evidence view | P0 | Must preserve component, job, dates, rank/person, CE sign-off |
+| PROP Engineering | Planned maintenance jobs | Engineering / PMS | PM Worksheet Templates | Yes | Template control and revision history | P0 | Used to generate issued worksheets |
+| PROP Engineering | Issued worksheets | Engineering / PMS | Issued Worksheet List | Yes | Dashboard and overdue flags | P0 | Active PMS workload |
+| PROP Engineering | Deferred worksheets | Engineering / PMS | Deferral Workflow | Yes | Stricter audit and reason capture | P0 | Deferral is Class-sensitive |
+| PROP Engineering | Chief Engineer sign-off | Engineering / PMS | CE Authorisation Queue | Yes | Return/comment workflow | P0 | Completed jobs should not enter final history until authorised |
+| PROP Engineering | Ad-hoc maintenance entries | Engineering / PMS | Ad-hoc Maintenance Report | Yes | Link to components, defects, files, actions | P1 | Must support historical ad-hoc work |
+| PROP Engineering | Running-hour jobs | Engineering / PMS | Running Hours and Hourly Jobs | Yes | Link to EOM later | P1 | Hourly jobs require counter readings and next-due logic |
+| PROP Engineering | Spare gear checks | Stores / Spares | Component-linked Spare Gear | Yes | Link PM jobs to spares and stock movements | P1 | Parts used should affect ROB after CE authorisation |
+| PROP Engineering | PMS reports | Reports | PMS Report Centre | Yes | PDF, Excel, CSV, print preview | P0 | Reports are critical for audit and Class evidence |
