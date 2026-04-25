@@ -1,4 +1,4 @@
-﻿# FORCAP Documentation Framework
+# FORCAP Documentation Framework
 
 This folder contains controlled documentation for FORCAP.
 

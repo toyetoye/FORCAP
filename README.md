@@ -1,4 +1,4 @@
-﻿# FORCAP
+# FORCAP
 
 FORCAP is a maritime enterprise vessel fleet management suite.
 

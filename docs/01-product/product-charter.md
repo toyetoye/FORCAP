@@ -1,4 +1,4 @@
-﻿# FORCAP Product Charter
+# FORCAP Product Charter
 
 ## Product Name
 
