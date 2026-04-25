@@ -20,7 +20,7 @@ The first serious build target is FORCAP Core plus Engineering / PMS.
 
 ## Documentation
 
-Controlled product, requirements, architecture, PMS/Class evidence, testing, security, quality, operations, and audit documentation is stored in docs/.
+Controlled product, requirements, architecture, PMS/Class evidence, testing, security, quality, operations, and audit documentation is stored in `docs/`.
 
 ## Repository Status
 
