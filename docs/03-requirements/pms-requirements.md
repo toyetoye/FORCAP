@@ -1,4 +1,4 @@
-﻿# FORCAP PMS Requirements
+# FORCAP PMS Requirements
 
 ## Purpose
 

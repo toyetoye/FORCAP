@@ -1,4 +1,4 @@
-﻿# PROP to FORCAP Parity Matrix
+# PROP to FORCAP Parity Matrix
 
 This document maps legacy PROP functions to FORCAP modules and build requirements.
 
